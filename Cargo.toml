@@ -1,0 +1,38 @@
+[package]
+name = "rocket-rust"
+version = "0.1.0"
+authors = ["Jorge Brunal <jebrunal@correo.unicordoba.edu.co>"]
+repository = "https://github.com/HomeInside/rocket-rust.git"
+homepage = "https://github.com/HomeInside/rocket-rust.git"
+license = "MIT"
+readme = "README.md"
+documentation = "https://github.com/HomeInside/rocket-rust.git"
+description = "Restfull api made in Rust"
+
+
+[dependencies]
+rocket = "0.3.9"
+rocket_codegen = "0.3.9"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+rocket_contrib = "*"
+
+[global]
+address = "localhost"
+port = 6969
+
+[development]
+address = "localhost"
+port = 6969
+log = "normal"
+
+[staging]
+address = "0.0.0.0"
+port = 80
+log = "normal"
+
+[production]
+address = "0.0.0.0"
+port = 80
+log = "critical"
