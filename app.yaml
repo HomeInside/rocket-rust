@@ -1,0 +1,10 @@
+runtime: custom
+env: flex
+
+skip_files:
+  - ^(.*/)?#.*#$
+  - ^(.*/)?.*~$
+  - ^.target$
+  - ^.idea$
+  - ^.git$
+  - ^test$
